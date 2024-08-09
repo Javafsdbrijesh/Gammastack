@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include
+		resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<springProperty scope="context" name="springAppName"
+		source="spring.application.name" />
+	<!-- Example for logging into the build folder of your project -->
+	<!-- Appender to log to console -->
+	<appender name="FILE"
+		class="ch.qos.logback.core.FileAppender">
+		<file>Log/departmentLog.log</file>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n </pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="FILE" />
+	</root>
+	<appender name="CONSOLE"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<file>Log/departmentLog.log</file>
+		<encoder>
+			<pattern>%date{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n </pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+	</root>
+</configuration>

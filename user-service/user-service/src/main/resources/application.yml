@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: USER-SERVICE
+  config:
+    import: "optional:configserver:http://localhost:8088"
+  logging:
+    level:
+      root: INFO
+      
+resiliance4j.retry:
+  instances:
+    userService:
+      maxRetryAttempts: 4
+      waitDuration: 1000000

@@ -1,0 +1,113 @@
+16:55:46.226 [main] INFO  c.t.d.DepartmentServiceApplication - Starting DepartmentServiceApplication using Java 17.0.9 with PID 29264 (C:\Gammastack\department-service\department-service\target\classes started by Brijesh in C:\Gammastack\department-service\department-service)
+16:55:46.228 [main] INFO  c.t.d.DepartmentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+16:55:46.296 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088
+16:55:46.296 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=DEPARTMENT-SERVICE, profiles=[default], label=null, version=null, state=null
+16:55:47.573 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:55:47.762 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 179 ms. Found 1 JPA repository interface.
+16:55:48.143 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90b4f68b-8846-393e-a6e2-660a0f6fae34
+16:55:48.571 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+16:55:48.575 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+16:55:49.034 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+16:55:49.053 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:55:49.053 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+16:55:49.154 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:55:49.156 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2852 ms
+16:55:50.022 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:55:50.090 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+16:55:50.132 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16:55:50.540 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16:55:50.576 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:55:50.896 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ed3be4
+16:55:50.898 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:55:50.956 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:55:50.957 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+16:55:51.961 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16:55:52.013 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:55:52.570 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:55:53.782 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+16:55:53.885 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+16:55:53.907 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+16:55:54.027 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+16:55:54.145 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+16:55:54.151 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+16:55:54.191 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+16:55:54.443 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+16:55:54.449 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+16:55:54.455 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+16:55:54.462 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1721993154461 with initial instances count: 2
+16:55:54.468 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DEPARTMENT-SERVICE with eureka with status UP
+16:55:54.469 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1721993154468, current=UP, previous=STARTING]
+16:55:54.471 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:DEPARTMENT-SERVICE:8081: registering service...
+16:55:54.499 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+16:55:54.500 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+16:55:54.529 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:DEPARTMENT-SERVICE:8081 - registration status: 204
+16:55:54.640 [main] INFO  c.t.d.DepartmentServiceApplication - Started DepartmentServiceApplication in 9.722 seconds (process running for 10.451)
+16:56:00.091 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:56:00.091 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:56:00.092 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:56:00.149 [http-nio-8081-exec-1] INFO  c.t.d.c.DepartmentController - Inside findDepartmentById get by ID: 1
+16:56:00.149 [http-nio-8081-exec-1] INFO  c.t.d.c.DepartmentController - in findDepartmentById
+17:00:54.249 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:04:41.746 [main] INFO  c.t.d.DepartmentServiceApplication - Starting DepartmentServiceApplication using Java 17.0.9 with PID 16960 (C:\Gammastack\department-service\department-service\target\classes started by Brijesh in C:\Gammastack\department-service\department-service)
+17:04:41.749 [main] INFO  c.t.d.DepartmentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+17:04:41.798 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088
+17:04:41.798 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=DEPARTMENT-SERVICE, profiles=[default], label=null, version=null, state=null
+17:04:43.098 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:04:43.252 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.
+17:04:43.580 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=90b4f68b-8846-393e-a6e2-660a0f6fae34
+17:04:44.078 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+17:04:44.083 [main] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+17:04:44.605 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+17:04:44.625 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:04:44.625 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+17:04:44.732 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:04:44.733 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2931 ms
+17:04:45.589 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:04:45.669 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+17:04:45.717 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+17:04:46.129 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+17:04:46.161 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:04:46.485 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46aea9f7
+17:04:46.487 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:04:46.547 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+17:04:46.548 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+17:04:47.703 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+17:04:47.755 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:04:48.281 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:04:49.636 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+17:04:49.723 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+17:04:49.734 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+17:04:49.824 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+17:04:49.907 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+17:04:49.913 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+17:04:49.952 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+17:04:50.176 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+17:04:50.180 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+17:04:50.185 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+17:04:50.194 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1721993690194 with initial instances count: 2
+17:04:50.202 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DEPARTMENT-SERVICE with eureka with status UP
+17:04:50.202 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1721993690202, current=UP, previous=STARTING]
+17:04:50.205 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:DEPARTMENT-SERVICE:8081: registering service...
+17:04:50.248 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+17:04:50.250 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+17:04:50.296 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DEPARTMENT-SERVICE/host.docker.internal:DEPARTMENT-SERVICE:8081 - registration status: 204
+17:04:50.415 [main] INFO  c.t.d.DepartmentServiceApplication - Started DepartmentServiceApplication in 10.263 seconds (process running for 11.029)
+17:04:56.949 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:04:56.949 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:04:56.951 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:04:57.025 [http-nio-8081-exec-1] INFO  c.t.d.c.DepartmentController - Inside findDepartmentById get by ID: 1
+17:04:57.025 [http-nio-8081-exec-1] INFO  c.t.d.c.DepartmentController - in findDepartmentById
+17:04:58.274 [http-nio-8081-exec-2] INFO  c.t.d.c.DepartmentController - Inside findDepartmentById get by ID: 1
+17:04:58.274 [http-nio-8081-exec-2] INFO  c.t.d.c.DepartmentController - in findDepartmentById
